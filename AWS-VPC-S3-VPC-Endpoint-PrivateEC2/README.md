@@ -70,7 +70,7 @@ This project demonstrates how a private EC2 instance (with no internet access) c
 
 ### 9️⃣ Copy Private Key for Accessing Private Instance
 
-📷 ![09-Copy-Private-Key-of-Private-Instance](./09-Copy-Private-Key-of-Private-Instance.png)
+📷 ![09-Copy-Private-Key-of-Private-Instance](./09-Copy-PrivateKey-of-Private-Instance.png)
 
 ---
 
