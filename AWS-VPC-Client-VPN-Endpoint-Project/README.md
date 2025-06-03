@@ -54,20 +54,20 @@ cd easy-rsa/easyrsa3
 ### ✅ Step 3: Generate the Server Certificate and Key
 
 ./easyrsa --san=DNS:server build-server-full server nopass
-### Generates:
-### - server.crt
-### - server.key
-### - ca.crt
+#### Generates:
+#### - server.crt
+#### - server.key
+#### - ca.crt
 
 ---
 
 ### ✅ Step 4: Generate the Client Certificate and Key
 
 ./easyrsa build-client-full client1.domain.tld nopass
-### Generates:
-### - client1.domain.tld.crt
-### - client1.domain.tld.key
-### - ca.crt (reused)
+#### Generates:
+#### - client1.domain.tld.crt
+#### - client1.domain.tld.key
+#### - ca.crt (reused)
 
 ---
 
@@ -161,6 +161,8 @@ cd ~/custom_folder/
 - Secure access to VPC from external client via VPN.
 - Certificate management with Easy-RSA and ACM.
 - Successfully tested using AWS VPN Client.
+
+---
 
 📂 Folder Structure
 AWS-VPC-Client-VPN-Endpoint-Project/
