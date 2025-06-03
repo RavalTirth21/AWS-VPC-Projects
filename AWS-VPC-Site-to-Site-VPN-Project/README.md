@@ -66,64 +66,98 @@ This project demonstrates how to set up a Site-to-Site VPN connection between an
 📷 ![08-SSH-On-Premises-Instance](./08-SSH-On-Premises-Instance.png)
 
 ### ✅ Step 2.1: Install Libreswan
-SSH into the on-premises Linux server:
+#### SSH into the on-premises Linux server:
 
-ssh -i /path/to/key.pem ec2-user@3.237.85.89
-sudo yum install libreswan -y
+
+#### ssh -i /path/to/key.pem ec2-user@3.237.85.89
+
+#### sudo yum install libreswan -y
 
 ---
 
 ### ✅ Step 2.2: Enable IP Forwarding
-Edit /etc/sysctl.conf:
 
-sudo vim /etc/sysctl.conf
+#### Edit /etc/sysctl.conf:
 
-Add:
 
-net.ipv4.ip_forward = 1
-net.ipv4.conf.all.accept_redirects = 0
-net.ipv4.conf.all.send_redirects = 0
+#### sudo vim /etc/sysctl.conf
 
-Apply changes:
 
-sudo sysctl -p
+### Add:
+
+
+#### net.ipv4.ip_forward = 1
+
+#### net.ipv4.conf.all.accept_redirects = 0
+
+#### net.ipv4.conf.all.send_redirects = 0
+
+
+### Apply changes:
+
+
+#### sudo sysctl -p
 
 ---
 
 ### ✅ Step 2.3: Create VPN Configuration Files
-🔸 myconnection.conf
 
-sudo vim /etc/ipsec.d/myconnection.conf
+### 🔸 myconnection.conf
 
-Add:
 
-conn Tunnel1
- authby=secret
- auto=start
- left=%defaultroute
- leftid=3.237.85.89             # Replace as per config
- right=13.126.216.225           # AWS VPN Endpoint IP
- type=tunnel
- ikelifetime=8h
- keylife=1h
- keyexchange=ike
- leftsubnet=10.2.0.0/16         # On-prem subnet
- rightsubnet=10.1.0.0/16        # AWS subnet
- dpddelay=10
- dpdtimeout=30
- dpdaction=restart_by_peer
-🔸 myconnection.secrets
+#### sudo vim /etc/ipsec.d/myconnection.conf
 
-sudo vim /etc/ipsec.d/myconnection.secrets
 
-Add:
+### Add:
 
-3.237.85.89 13.126.216.225 : PSK "HNWZYq6o45jXAyfNGlhIDGw5XIaBZOxM"
+
+#### conn Tunnel1
+
+####  authby=secret
+
+####  auto=start
+
+####  left=%defaultroute
+ 
+#### leftid=3.237.85.89             # Replace as per config
+ 
+#### right=13.126.216.225           # AWS VPN Endpoint IP
+ 
+#### type=tunnel
+ 
+#### ikelifetime=8h
+
+####  keylife=1h
+ 
+#### keyexchange=ike
+ 
+#### leftsubnet=10.2.0.0/16         # On-prem subnet
+ 
+#### rightsubnet=10.1.0.0/16        # AWS subnet
+
+####  dpddelay=10
+ 
+#### dpdtimeout=30
+ 
+#### dpdaction=restart_by_peer
+
+#### 🔸 myconnection.secrets
+
+
+#### sudo vim /etc/ipsec.d/myconnection.secrets
+
+
+#### Add:
+
+
+#### 3.237.85.89 13.126.216.225 : PSK "HNWZYq6o45jXAyfNGlhIDGw5XIaBZOxM"
 
 ### ✅ Step 2.4: Start IPsec Service
 
-sudo systemctl restart ipsec
-sudo ipsec status
+
+#### sudo systemctl restart ipsec
+
+#### sudo ipsec status
 
 ---
 
