@@ -32,46 +32,46 @@ This project sets up an AWS Client VPN Endpoint with mutual authentication (cert
 
 ### ✅ Install Easy-RSA and Generate Certificates (Run inside EC2)
 
-#### ✅ Step 1: Install Easy-RSA
+### ✅ Step 1: Install Easy-RSA
 
-# Install Git
+#### Install Git
 sudo yum install git -y
 
-# Clone Easy-RSA and navigate to the directory
+#### Clone Easy-RSA and navigate to the directory
 git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 
 ---
 
-✅ Step 2: Initialize PKI and Build CA
+### ✅ Step 2: Initialize PKI and Build CA
 
 ./easyrsa init-pki
 ./easyrsa build-ca nopass
-# When prompted for Common Name, press Enter or type something like "My-VPN-CA"
+#### When prompted for Common Name, press Enter or type something like "My-VPN-CA"
 
 ---
 
-✅ Step 3: Generate the Server Certificate and Key
+### ✅ Step 3: Generate the Server Certificate and Key
 
 ./easyrsa --san=DNS:server build-server-full server nopass
-# Generates:
-# - server.crt
-# - server.key
-# - ca.crt
+### Generates:
+### - server.crt
+### - server.key
+### - ca.crt
 
 ---
 
-✅ Step 4: Generate the Client Certificate and Key
+### ✅ Step 4: Generate the Client Certificate and Key
 
 ./easyrsa build-client-full client1.domain.tld nopass
-# Generates:
-# - client1.domain.tld.crt
-# - client1.domain.tld.key
-# - ca.crt (reused)
+### Generates:
+### - client1.domain.tld.crt
+### - client1.domain.tld.key
+### - ca.crt (reused)
 
 ---
 
-✅ Step 5: Organize All Required Certificates into a Folder
+### ✅ Step 5: Organize All Required Certificates into a Folder
 
 mkdir ~/custom_folder/
 cp pki/ca.crt ~/custom_folder/
