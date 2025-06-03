@@ -124,7 +124,7 @@ This project demonstrates secure communication between two VPCs (VPC1 and VPC2) 
 
 #### 🔹 Copy Key to Public Instance
 
-📷 ![Copy Key](./19-Copy-Private-Key-of-VPC1-VPC2.png)
+📷 ![Copy Key](./19-Copy-PrivateKey-of-VPC1-VPC2.png)
 
 #### 🔹 Set Key Permissions
 
@@ -149,7 +149,7 @@ This project demonstrates secure communication between two VPCs (VPC1 and VPC2) 
 - Successfully connected VPC1 and VPC2 using AWS Transit Gateway.
 - Verified private IP-based communication via **ping** and **SSH**.
 - Demonstrated secure key copy and permission setup.
-- Enabled full private network communication between VPCs across regions/accounts.
+- Enabled full private network communication between VPCs.
 
 ---
 
@@ -174,7 +174,7 @@ AWS-VPC-Transit-Gateway-Project/
 ├── 16-SSH-with-Earlier-Created-VPC-Instance-Public-IP.png
 ├── 17-Ping-with-VPC1-Private-IP.png
 ├── 18-Ping-with-VPC2-Private-IP.png
-├── 19-Copy-Private-Key-of-VPC1-VPC2.png
+├── 19-Copy-PrivateKey-of-VPC1-VPC2.png
 ├── 20-Permission-To-PrivateKey.png
 ├── 21-SSH-with-VPC1-Private-IP.png
 ├── 22-SSH-with-VPC2-Private-IP.png
