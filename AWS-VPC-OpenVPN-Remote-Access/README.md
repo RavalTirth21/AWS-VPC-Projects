@@ -124,7 +124,7 @@ This project demonstrates how to set up a secure OpenVPN server on AWS within a 
 
 ### 1️⃣8️⃣ Give Decrypted Password 
 
-📷 ![18-Give-Decrypt-Windows-Password](./18-Give-Decrypt-Windows-Password.png)
+📷 ![18-Give-Decrypt-Windows-Password](./18-GIve-Decrypted-Windows-Password.png)
 
 ---
 
