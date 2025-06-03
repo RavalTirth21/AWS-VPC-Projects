@@ -82,7 +82,7 @@ The public subnet’s route table includes a route to the Internet Gateway (`0.0
 
 - The private key for the private instance was copied into the Bastion Host.
 
-📷 ![Copy Key to Bastion](./10-PrivateKey-PrivateInstance-Copy-PublicInstance.png)
+📷 ![Copy Key to Bastion](./10-Privatekey-PrivateInstance-Copy-PublicInstance.png)
 
 ---
 
@@ -118,7 +118,7 @@ Added `0.0.0.0/0` route pointing to NAT Gateway in private route table.
 
 ### ✅ Final Internet Access from Private Instance via NAT
 
-Successfully connected to internet (e.g., via ping, yum update) from private instance using NAT.
+Successfully connected to internet (e.g., via ping) from private instance using NAT.
 
 📷 ![Private Instance Internet via NAT](./15-Bastion-NAT-Gateway-Internet-Access.png)
 
@@ -144,7 +144,7 @@ AWS-VPC-Bastion-NAT-Gateway-Project/
 ├── 07-Instance-with-Public-Subnet.png
 ├── 08-Instance-with-Private-Subnet.png
 ├── 09-SSH-with-Public-IP-of-Public-Subnet-Instance.png
-├── 10-PrivateKey-PrivateInstance-Copy-PublicInstance.png
+├── 10-Privatekey-PrivateInstance-Copy-PublicInstance.png
 ├── 11-Permission-to-PrivateKey.png
 ├── 12-SSH-with-Private-IP-Private-Instance.png
 ├── 13-NAT-Gateway.png
