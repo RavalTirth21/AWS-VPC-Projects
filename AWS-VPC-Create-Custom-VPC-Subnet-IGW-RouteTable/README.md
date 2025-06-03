@@ -54,7 +54,7 @@ The route table is modified to include a rule that forwards traffic destined for
 
 The created public subnet is associated with the route table to ensure that instances in the subnet follow the defined routing rules.
 
-![Subnet Associated with Route Table](./05-Added-Subnet-in-SubnetAssociation.png)
+![Subnet Associated with Route Table](./05-Added-Subnet-In-SubnetAssociation.png)
 
 ---
 
@@ -79,6 +79,6 @@ AWS-VPC-Create-Custom-VPC-Subnet-IGW-RouteTable/
 ├── 02-Subnet-Created.png
 ├── 03-Internet-Gateway-Created-&-Attach-to-VPC.png
 ├── 04-Add-Route-of-Internet-Gateway-in-Route-Table.png
-├── 05-Added-Subnet-in-SubnetAssociation.png
+├── 05-Added-Subnet-In-SubnetAssociation.png
 ├── 06-Created-Instance-with-Created-VPC.png
 └── README.md
