@@ -77,7 +77,7 @@ Ping from the local PC to the EC2 instance public IP is successful.
 
 ### 8️⃣ Find Public IP of Local Machine
 
-Your public IP address was obtained via [myip.com](https://www.myip.com).
+Your public IP address was obtained via (https://whatismyipaddress.com/).
 
 📷 ![My Public IP](./08-My-Public-IP.png)
 
