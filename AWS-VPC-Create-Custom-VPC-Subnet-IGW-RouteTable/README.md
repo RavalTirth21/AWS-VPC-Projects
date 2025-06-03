@@ -28,7 +28,7 @@ A new VPC is created with a custom CIDR block (e.g., `10.0.0.0/16`).
 
 ### 📌 Step 2: Subnet Created
 
-A subnet is created inside the VPC, typically with CIDR `10.0.1.0/24`, and configured for a specific availability zone.
+A subnet is created inside the VPC, typically with CIDR `10.0.0.0/24`, and configured for a specific availability zone.
 
 ![Subnet Created](./02-Subnet-Created.png)
 
