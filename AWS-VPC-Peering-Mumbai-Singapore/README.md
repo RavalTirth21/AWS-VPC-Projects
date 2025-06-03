@@ -76,19 +76,19 @@ This project demonstrates how to create a **VPC peering connection between two A
 
 ### 9️⃣ Modify Mumbai Route Table (Peering + IGW)
 
-📷 ![09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet](./09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet.png)
+📷 ![09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet](./09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet-Association.png)
 
 ---
 
 ### 🔟 Modify Singapore Route Table (Peering + IGW)
 
-📷 ![10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet](./10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet.png)
+📷 ![10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet](./10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet-Association.png)
 
 ---
 
 ### 1️⃣1️⃣ Ping from Mumbai to Singapore (Private IP)
 
-📷 ![11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-PrivateIP](./11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-PrivateIP.png)
+📷 ![11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-PrivateIP](./11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-Private-IP.png)
 
 ✅ **Success** – Indicates correct peering and route setup.
 
@@ -96,7 +96,7 @@ This project demonstrates how to create a **VPC peering connection between two A
 
 ### 1️⃣2️⃣ Ping from Singapore to Mumbai (Private IP)
 
-📷 ![12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-PrivateIP](./12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-PrivateIP.png)
+📷 ![12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-PrivateIP](./12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-Private-IP.png)
 
 ✅ **Success** – Full bi-directional connectivity verified.
 
@@ -113,8 +113,8 @@ AWS-VPC-Peering-Mumbai-Singapore/
 ├── 06-Instance-Created-with-Singapore-Region-VPC.png
 ├── 07-VPC-Peering-Creating-In-Mumbai-Region.png
 ├── 08-VPC-Peering-Request-Accepted-Singapore-Region.png
-├── 09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet.png
-├── 10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet.png
-├── 11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-PrivateIP.png
-├── 12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-PrivateIP.png
+├── 09-Mumbai-Region-Route-Table-IGW-Peering-Connection-Subnet-Association.png
+├── 10-Singapore-Region-Route-Table-IGW-PeeringConnection-Subnet-Association.png
+├── 11-Ping-From-Mumbai-Region-Instance-to-Singapore-Region-Private-IP.png
+├── 12-Ping-From-Singapore-Region-Instance-to-Mumbai-Region-Private-IP.png
 ├── README.md
